@@ -3,19 +3,128 @@ body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,p,blockquote,th,t
 	padding:0;
 }
 
+nav a {
+	font-style:normal;
+}
+
+a {
+	color: #66d;
+	font-style: italic;
+}
+
+a:hover {
+	font-weight:bolder;
+}
+
 body {
-   font-family: sans-serif;
+   font-family: "Courier", monospace;
+	 font-size:16px;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-family: "Open Sans", sans-serif;
+}
+
+#portfolio {
+	margin-top:1.5em;
+}
+
+#portfolio section {
+	display:flex;
+	align-items: center;
+}
+
+#portfolio section a {
+	margin:0;
+}
+
+#portfolio section a img {
+	width:auto;
+  max-height: 6.5em;
+	margin:.25em 0em;
+}
+
+#new {
+	justify-content: end;
+}
+
+#old {
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+#port_desc {
+		margin-top:1.5em;
+}
+
+.year {
+	margin: 0.75em;
+	min-width: 7em;
+	align-self: end;
+}
+
+h1 {
+	font-size: 2em;
+	line-height: 3em;
+}
+
+h2 {
+	font-size:1.5em;
+	line-height: 3em;
+}
+
+#title h3 {
+	margin-left:2em;
+	font-size:1.2em;
+	line-height: 5em;
+}
+
+#dates {
+	display: flex;
+	flex-direction: column;
+}
+
+#dates li {
+	list-style: none;
+	margin: 0;
+}
+
+#freunde {
+	margin-top:1.5em;
+	display:flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+#links li {
+	list-style: none;
+	margin: 0;
+}
+
+p {
+	font-size: 1em;
+	line-height:1.5em;
+	margin: 0 0 1.5em 0;
 }
 
 main {
   display: flex;
   flex-direction: column;
 }
-
+#poem {
+	margin-top:1.5em;
+}
+#willkommen {
+	margin-top: 1.5em;
+}
 #willkommen img {
   height: auto;
   width:100%;
   max-width: 70em;
+}
+
+#video iframe {
+	width:100%;
 }
 
 aside {
@@ -23,8 +132,9 @@ aside {
   flex-direction:column;
 }
 
-aside ul {
-  padding-left:1em;
+li{
+	margin: 0 0 .75em 0;
+	line-height: 1.5em;
 }
 
 footer {
@@ -41,8 +151,9 @@ nav ul {
 }
 
 nav li {
+	line-height:1.5em;
   list-style: none;
-  margin: 0.5em;
+  margin:0 1.5em 0 0;
   padding: 0;
 }
 
@@ -53,7 +164,16 @@ nav li {
 
 .freund img{
   width:auto;
-  max-height: 20em;
+  max-height: 10em;
+}
+
+#video {
+	height:336px;
+	margin-bottom: 1.5em;
+}
+
+#video iframe {
+	height: 100%;
 }
 
 @media (min-width: 40em) {
@@ -67,6 +187,10 @@ nav li {
     flex-direction: row;
   }
 
+	#dates {
+		flex-direction: row;
+	}
+
   nav ul {
     flex-direction: row;
   }
@@ -78,25 +202,39 @@ nav li {
   #title {
     flex-direction: row;
   }
+
+	#video{
+		height:480px;
+	}
 }
 
 @media (min-width: 85em) {
   body {
     width:90%;
-    max-width: 80em;
+    max-width: 75em;
   }
+
+	nav {
+		margin: 1.5em 0 0em 0;
+	}
 
   main {
     flex-direction: row;
   }
 
+
+
 article {
-  width:70%;
+  width:65%;
 }
 
   aside {
-    margin-left:2em;
+    margin-left:5%;
     width:30%;
     flex-direction:column;
   }
+
+	#video{
+		height:432px;
+	}
 }
