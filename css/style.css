@@ -16,7 +16,8 @@ img {
 }
 
 #fotos img {
-	max-width:40%;
+	max-width:45%;
+	margin:.5em;
 }
 
 nav a {
