@@ -8,6 +8,10 @@ img {
 	height: auto;
 }
 
+#title {
+	text-align: center;
+}
+
 #fotos {
 	display: flex;
 	flex-wrap: wrap;
@@ -19,6 +23,10 @@ img {
 	max-width:45%;
 	margin:.5em;
 }
+nav {
+	font-size: 1.2em;
+	text-align: center;
+}
 
 nav a {
 	font-style:normal;
@@ -26,6 +34,10 @@ nav a {
 
 .italic {
 	font-style: italic;
+}
+
+.block {
+	text-align: justify;
 }
 
 a {
@@ -39,7 +51,9 @@ a:hover {
 
 body {
    font-family: "Courier", monospace;
-	 font-size:16px;
+	 font-size:14px;
+	 width:90%;
+	 margin:auto;
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -53,6 +67,7 @@ h1,h2,h3,h4,h5,h6 {
 #portfolio section {
 	display:flex;
 	align-items: center;
+	flex-wrap: wrap;
 }
 
 #portfolio section a img{
@@ -64,7 +79,7 @@ h1,h2,h3,h4,h5,h6 {
 #portfolio #new a{
 	width:auto;
   max-height: 8.5em;
-	max-width: 10em;
+	max-width: 30%;
 	margin:1em .25em;
 }
 
@@ -113,6 +128,7 @@ h1 {
 h2 {
 	font-size:1.5em;
 	line-height: 3em;
+	margin-right:1.5em;
 }
 
 h3 {
@@ -121,7 +137,6 @@ h3 {
 }
 
 #title h3 {
-	margin-left:2em;
 	font-size:1.2em;
 	line-height: 5em;
 }
@@ -148,6 +163,7 @@ h4 {
 
 #freunde {
 	margin-top:1.5em;
+	margin-bottom:1.5em;
 	display:flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
@@ -238,8 +254,19 @@ nav li {
     margin:auto;
     width: 80%;
     max-width: 55em;
+				font-size: 16px;
   }
+#title {
+	text-align: left;
+}
 
+	#title h3 {
+		margin-left:2em;
+	}
+
+	#portfolio #new a{
+		max-width: 10em;
+	}
   aside {
     flex-direction: row;
   }
@@ -248,6 +275,11 @@ nav li {
 		flex-direction: row;
 	}
 
+nav {
+	font-size:1em;
+	text-align:left;
+		margin: 1.5em 0 0em 0;
+}
   nav ul {
     flex-direction: row;
   }
@@ -269,16 +301,13 @@ nav li {
   body {
     width:90%;
     max-width: 75em;
+		font-size: 16px;
   }
 
-	nav {
-		margin: 1.5em 0 0em 0;
-	}
 
   main {
     flex-direction: row;
   }
-
 
 
 article {
