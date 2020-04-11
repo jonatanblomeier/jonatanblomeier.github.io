@@ -1,0 +1,328 @@
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,p,blockquote,th,td {
+	margin:0;
+	padding:0;
+}
+
+img {
+	max-width:100%;
+	height: auto;
+}
+
+#title {
+	text-align: center;
+}
+
+#fotos {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+		margin-bottom: 1.5em;
+}
+
+#fotos img {
+	max-width:45%;
+	margin:.5em;
+}
+nav {
+	font-size: 1.2em;
+	text-align: center;
+}
+
+nav a {
+	font-style:normal;
+}
+
+.italic {
+	font-style: italic;
+}
+
+.block {
+	text-align: justify;
+}
+
+a {
+	color: #66d;
+	font-style: italic;
+}
+
+a:hover {
+	font-weight:bolder;
+}
+
+body {
+   font-family: "Courier", monospace;
+	 font-size:14px;
+	 width:90%;
+	 margin:auto;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-family: "Open Sans", sans-serif;
+}
+
+#portfolio {
+	margin-top:1.5em;
+}
+
+#portfolio section {
+	display:flex;
+	align-items: center;
+	flex-wrap: wrap;
+	-webkit-flex-wrap: wrap;
+}
+
+#portfolio section a img{
+	height:100%;
+	max-width:100%;
+	object-fit:cover;
+}
+
+#portfolio #new a{
+	width:auto;
+  max-height: 8.5em;
+	max-width: 30%;
+	margin:1em 0.25em;
+}
+
+#portfolio #old a{
+	width:auto;
+  max-height: 6.5em;
+	max-width: 8em;
+	margin:1em 0.25em;
+}
+
+#portfolio #older a{
+	width:auto;
+  max-height: 5.5em;
+	max-width: 6.5em;
+	margin:1em 0.25em;
+}
+
+#new {
+	justify-content: end;
+}
+
+#old {
+	justify-content: space-around;
+	flex-wrap: wrap;
+	-webkit-flex-wrap:wrap;
+}
+
+#older {
+	justify-content: start;
+}
+
+#port_desc {
+		margin-top:1.5em;
+}
+
+.year {
+	margin: 0.75em;
+	min-width: 7em;
+	align-self: end;
+}
+
+h1 {
+	font-size: 2em;
+	line-height: 3em;
+}
+
+h2 {
+	font-size:1.5em;
+	line-height: 3em;
+	margin-right:1.5em;
+}
+
+h3 {
+	font-size: 1.3em;
+	line-height: 3em;
+}
+
+#title h3 {
+	font-size:1.2em;
+	line-height: 5em;
+}
+
+h4 {
+	margin-bottom:1em;
+	font-size:1.5em;
+}
+
+#dates {
+	display: flex;
+	flex-direction: column;
+}
+
+#dates li {
+	list-style: none;
+	margin: 0;
+}
+
+#texte li {
+	list-style: none;
+	margin: 0;
+}
+
+#freunde {
+	margin-top:1.5em;
+	margin-bottom:1.5em;
+	display:flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+#links li {
+	list-style: none;
+	margin: 0;
+}
+
+p {
+	font-size: 1em;
+	line-height:1.5em;
+	margin: 0 0 1.5em 0;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+#poem {
+	margin-top:1.5em;
+}
+#willkommen {
+	margin-top: 1.5em;
+}
+#willkommen img {
+  height: auto;
+  width:100%;
+  max-width: 70em;
+}
+
+#video iframe {
+	width:100%;
+}
+
+aside {
+  display: flex;
+  flex-direction:column;
+}
+
+li{
+	margin: 0 0 .75em 0;
+	line-height: 1.5em;
+}
+
+footer {
+  margin-top:3em;
+  text-align: center;
+  clear: both;
+  height:2em;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: column;
+  padding-left: 0em;
+}
+
+nav li {
+	line-height:1.5em;
+  list-style: none;
+  margin:0 1.5em 0 0;
+  padding: 0;
+}
+
+#title {
+  display: flex;
+  flex-direction: column;
+}
+
+.freund img{
+  width:auto;
+  max-height: 10em;
+}
+
+#video {
+	height:336px;
+	margin-bottom: 1.5em;
+}
+
+#video iframe {
+	height: 100%;
+}
+
+@media (min-width: 40em) {
+  body {
+    margin:auto;
+    width: 80%;
+    max-width: 55em;
+				font-size: 16px;
+  }
+#title {
+	text-align: left;
+}
+
+	#title h3 {
+		margin-left:2em;
+	}
+
+	#portfolio #new a{
+		max-width: 10em;
+	}
+  aside {
+    flex-direction: row;
+  }
+
+	#dates {
+		flex-direction: row;
+	}
+
+nav {
+	font-size:1em;
+	text-align:left;
+		margin: 1.5em 0 0em 0;
+}
+  nav ul {
+    flex-direction: row;
+  }
+
+  nav li {
+
+  }
+
+  #title {
+    flex-direction: row;
+  }
+
+	#video{
+		height:480px;
+	}
+}
+
+@media (min-width: 85em) {
+  body {
+    width:90%;
+    max-width: 75em;
+		font-size: 16px;
+  }
+
+
+  main {
+    flex-direction: row;
+  }
+
+
+article {
+  width:65%;
+}
+
+  aside {
+    margin-left:5%;
+    width:30%;
+    flex-direction:column;
+  }
+
+	#video{
+		height:432px;
+	}
+}
