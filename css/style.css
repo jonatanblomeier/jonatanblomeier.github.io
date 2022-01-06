@@ -271,9 +271,9 @@ nav li {
     flex-direction: row;
   }
 
-	#dates {
+	/* #dates {
 		flex-direction: row;
-	}
+	} */
 
 nav {
 	font-size:1em;
