@@ -32,14 +32,12 @@ header {
 
 }
 
-nav {
-	background: #fffbf0;
-	border-color: #e7c157;
-}
+
 
 nav ul {
 	display: flex;
 	flex-flow: row;
+    padding:0;
 }
 
 nav ul li {
@@ -47,20 +45,7 @@ nav ul li {
 	padding: 0 1em 0 0;
 }
 
-main {
-	background: #ffede0;
-	border-color: #df6c20;
-}
 
-aside {
-	background: #ebf5d7;
-	border-color: #8db243;
-}
-
-footer {
-	background: #e4ebf2;
-	border-color: #8a9da8;
-}
 
 footer * {
 	float: right;
@@ -69,8 +54,9 @@ footer * {
 }
 
 body {
+    max-width:68em;
 	margin: 0 auto;
-	font-family: sans-serif;
+	font-family: "Courier New", monospace;
 }
 
 .project_media {
@@ -90,4 +76,3 @@ body {
     margin: 1em;
     order:-1;
 }
-
