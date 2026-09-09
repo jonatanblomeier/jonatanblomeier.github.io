@@ -6,8 +6,8 @@ body {
 
 @media (min-width: 45em) {
 	body {
-		grid-template-columns: 2fr 1fr;
-		grid-template-rows: auto 1fr min-content auto;
+		grid-template-columns: 3fr 1.2fr;
+		grid-template-rows: auto auto min-content auto;
 	}
 }
 
@@ -18,9 +18,8 @@ article,
 section,
 aside,
 footer {
-	border-radius: 0 0.5em 0.5em;
-	border: thin solid;
-	padding: 1em;
+	padding: 0;
+	margin: 0;
 }
 
 header,
@@ -36,6 +35,16 @@ header {
 nav {
 	background: #fffbf0;
 	border-color: #e7c157;
+}
+
+nav ul {
+	display: flex;
+	flex-flow: row;
+}
+
+nav ul li {
+	list-style: none;
+	padding: 0 1em 0 0;
 }
 
 main {
@@ -61,15 +70,14 @@ footer * {
 
 body {
 	margin: 0 auto;
-	max-width: 60em;
 	font-family: sans-serif;
 }
 
 .project_media {
     display: grid;
     max-width: 60em;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns:auto;
+    grid-template-rows: auto;
 }
 
 .project_media img {
