@@ -74,10 +74,19 @@ body {
 }
 
 .project_media {
-    display: flex;
+  display:flex;
+    flex-wrap:wrap;
+    flex-direction: auto; 
 }
 
-.project_media img, .project_media iframe{
+.project_media img {
     max-width:20em;
-	height:auto;
+    height:auto;
+    margin: 1em;
+}
+
+.project_media iframe {
+    max-width:40em;
+    height:auto;
+    margin: 1em;
 }
