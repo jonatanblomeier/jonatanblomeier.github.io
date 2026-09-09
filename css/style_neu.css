@@ -1,7 +1,14 @@
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,p,blockquote,th,td {
+	margin:0;
+	padding:0;
+}
+
 body {
 	display: grid;
 	gap: 0.5em;
+    line-height: 1.4em;
 }
+
 /* 3-spaltiges Layout für breitere Viewports */
 
 @media (min-width: 45em) {
@@ -32,7 +39,15 @@ header {
 
 }
 
+footer {
 
+    text-align: left;
+    clear:both;
+}
+
+footer a::before {
+    content:"> "
+}
 
 nav ul {
 	display: flex;
@@ -40,6 +55,7 @@ nav ul {
     padding:0;
 	font-size:1.2em;
 	text-align: center;
+    
 }
 
 nav ul li {
@@ -49,8 +65,19 @@ nav ul li {
 
 nav a {
 	font-style:normal;
+    text-decoration: none;
+    color: #24D;
+    
 }
 
+nav a::before {
+    content:"> "
+}
+
+
+nav a:hover {
+    font-weight: 600;
+}
 
 
 footer * {
@@ -82,4 +109,12 @@ body {
     aspect-ratio: 16/9;
     margin: 1em;
     order:-1;
+}
+
+ul {
+    padding-left:0;
+}
+
+li {
+    list-style:none;
 }
