@@ -4,10 +4,10 @@ body {
 }
 /* 3-spaltiges Layout für breitere Viewports */
 
-@media (min-width: 30em) {
+@media (min-width: 45em) {
 	body {
-		grid-template-columns: 1fr 2fr 1fr;
-		grid-template-rows: auto 1fr min-content;
+		grid-template-columns: 2fr 1fr;
+		grid-template-rows: auto 1fr min-content auto;
 	}
 }
 
@@ -24,23 +24,13 @@ footer {
 }
 
 header,
-footer {
+footer,
+nav {
 	grid-column: 1 / -1;
 }
 
 header {
-	background: #F1F3F4;
-	border-color: #d5d5d5;
-	grid-column: 1 / -1;
-	grid-row: 1;
-	display: grid;
-	grid-template-columns: 4em 1fr;
-	gap: .5em;
-	img {
-		width: 2.25em;
-		aspect-ratio: 1/1;
-		padding-top: 1.5em;
-	}
+
 }
 
 nav {
