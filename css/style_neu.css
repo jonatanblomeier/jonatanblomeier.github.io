@@ -3,11 +3,6 @@ body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,p,blockquote,th,t
 	padding:0;
 }
 
-body {
-	display: grid;
-	gap: 0.5em;
-    line-height: 1.4em;
-}
 
 /* 3-spaltiges Layout für breitere Viewports */
 
@@ -35,18 +30,69 @@ nav {
 	grid-column: 1 / -1;
 }
 
-header {
 
+#logo  {
+
+  display:flex;
+  margin-top:1em;
+  margin-bottom:1em;
+  align-items: center;
+}
+
+#logo p {
+ margin:0 0 0 0;
+margin-left:1em;
+letter-spacing: .2em;
+align-self:last baseline;
+font-kerning: none;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: "Open Sans", sans-serif;
+  font-kerning: none;
+}
+
+
+h1 {
+  font-size: 2em;
+  font-weight: 100;
+  letter-spacing: .1em;
+}
+
+h2 {
+  font-size: 1.56em;
+  line-height: 2em;
+  font-weight: 300;
+    letter-spacing: .1em;
+  
+}
+
+h3 {
+  font-size:1.25em;
+  line-height: 1.8em;
+  font-weight: 600;
+    letter-spacing: .2em;
+}
+
+p {
+font-size: 1em;
+	line-height:1.5em;
+	margin: 0 0 1.5em 0;
 }
 
 footer {
-
-    text-align: left;
+    text-align:center;
     clear:both;
+    background:#ccc;
+    padding:1em;
 }
 
 footer a::before {
     content:"> "
+}
+
+nav {
+  text-align: center;
 }
 
 nav ul {
@@ -75,21 +121,20 @@ nav a::before {
 }
 
 
-nav a:hover {
-    font-weight: 600;
+a:hover {
+    font-weight:bolder;
 }
 
 
-footer * {
-	float: right;
-	clear: right;
-	margin: 0 0 1em;
-}
+
 
 body {
-    max-width:68em;
+  	display: grid;
+	gap: 0.5em;
+    width:90%;
 	margin: 0 auto;
 	font-family: "Courier New", monospace;
+  font-size:100%;
 }
 
 .project_media {
