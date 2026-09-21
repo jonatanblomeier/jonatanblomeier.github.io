@@ -162,6 +162,7 @@ body {
     flex-wrap:wrap;
     flex-direction: auto; 
    gap: 0.5em;
+	margin:2em 0em;
 }
 
 .project_media img {
