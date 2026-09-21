@@ -80,6 +80,11 @@ font-size: 1em;
 	margin: 0 0 1.5em 0;
 }
 
+.project_info p {
+	text-align:justify;
+}
+
+
 .category {
 	font-style: italic;
 }
