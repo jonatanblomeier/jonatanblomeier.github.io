@@ -33,6 +33,7 @@ nav {
 aside {
 	position:sticky;
 	top:0;
+	height:fit-content;
 }
 
 #logo  {
@@ -167,11 +168,13 @@ body {
 .project_media img {
 	flex:1 1 10em;
 	height:15em;
+	max-width:40em;
 	object-fit: cover;
 }
 
 .project_media iframe {
 		flex:1 1 10em;
+	max-height:20em;
 	aspect-ratio: 16/9;
 	object-fit: cover;
 }
