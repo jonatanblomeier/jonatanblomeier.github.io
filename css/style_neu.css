@@ -178,6 +178,11 @@ body {
 	object-fit: cover;
 }
 
+.copyright::before {
+	content:"Fotos &copy;"
+	font-size:.2em;
+}
+
 ul {
     padding-left:0;
 }
