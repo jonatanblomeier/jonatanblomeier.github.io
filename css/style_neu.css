@@ -208,6 +208,7 @@ li {
 	flex-direction:auto;
 }
 
-.fotos {
+.fotos img{
 	flex:1 1 30em;
+	max-height:10em;
 }
