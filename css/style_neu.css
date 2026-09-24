@@ -162,7 +162,6 @@ body {
     flex-wrap:wrap;
     flex-direction: auto; 
 	justify-content:space-between;
-	align-items: center;
    gap: 0.5em;
 	margin:2em 0em;
 }
@@ -180,9 +179,13 @@ body {
 	object-fit: cover;
 }
 
+.copyright {
+	font-size:0.5em;
+}
+
 .copyright::before {
 	content:"Fotos \00A9";
-	font-size:0.5em;
+	
 }
 
 ul {
