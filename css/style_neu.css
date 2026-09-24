@@ -179,9 +179,13 @@ body {
 }
 
 .copyright {
-	font-size:0.5em;
+	font-size:0.66em;
 	rotate:90deg;
-	align-self:center;
+	height:0;
+	width:0;
+	overflow:visible;
+	white-space:nowrap;
+	color:#888;
 }
 
 .copyright::before {
