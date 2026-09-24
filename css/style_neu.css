@@ -181,6 +181,8 @@ body {
 .copyright {
 	font-size:0.5em;
 	rotate:90deg;
+	align-self:center;
+	justify-self:center;
 }
 
 .copyright::before {
