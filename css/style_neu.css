@@ -161,6 +161,8 @@ body {
   display:flex;
     flex-wrap:wrap;
     flex-direction: auto; 
+	justify-content:space-between;
+	align-items: center;
    gap: 0.5em;
 	margin:2em 0em;
 }
@@ -179,7 +181,7 @@ body {
 }
 
 .copyright::before {
-	content:"Fotos &copy;"
+	content:"Fotos &copy;";
 	font-size:.2em;
 }
 
