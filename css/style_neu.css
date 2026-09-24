@@ -181,8 +181,8 @@ body {
 }
 
 .copyright::before {
-	content:"Fotos &copy;";
-	font-size:.2em;
+	content:"Fotos \00A9";
+	font-size:0.5em;
 }
 
 ul {
