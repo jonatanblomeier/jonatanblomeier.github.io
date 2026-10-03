@@ -36,6 +36,12 @@ aside {
 	height:fit-content;
 }
 
+a, a:visited {
+	font-style:normal;
+    text-decoration: none;
+    color: #24D;
+}
+
 #logo  {
 
   display:flex;
