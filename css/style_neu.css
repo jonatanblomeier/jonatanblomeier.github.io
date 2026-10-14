@@ -215,10 +215,15 @@ li {
 	display:flex;
 	gap: 0.5em;
 	flex-wrap:wrap;
-	flex-direction:auto;
+	flex-direction:row;
+}
+
+.spalte {
+	flex: 33%;
+	max-width: 33%;
 }
 
 .fotos img{
-	flex:1 1 30em;
-	max-height:10em;
+	/* flex:1 1 30em;
+	max-height:10em; */
 }
