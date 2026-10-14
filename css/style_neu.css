@@ -214,16 +214,14 @@ li {
 .fotos {
 	display:flex;
 	gap: 0.5em;
-	flex-wrap:wrap;
+	/* flex-wrap:no-wrap; */
 	flex-direction:row;
 }
 
 .spalte {
-	flex: 33%;
-	max-width: 33%;
+	max-width: 40%;
 }
 
 .fotos img{
-	/* flex:1 1 30em;
-	max-height:10em; */
+	width:100%;
 }
